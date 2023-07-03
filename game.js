@@ -2,9 +2,6 @@ window.addEventListener('resize', function () {
   window.location.reload();
 }); //update size of game depending on size of screen
 
-
-
-
 var wrapper = document.getElementById('wrapper');
 var game = document.getElementById('game');
 var scoreText = document.getElementById('scoreText');
@@ -19,7 +16,7 @@ wrapper.style.height = gameHeight + 'px';
 
 
 //bricks
-var numBricks = 5;
+var numBricks = 20;
 var brickWidth = 60;
 var brickHeight = 20;
 var spaceBetween = 20;
@@ -253,7 +250,7 @@ function update() {
 function gameWon(){
   console.log("congratzzz")
 
-  brickArr.unshift(gameDone);
+  //brickArr.unshift(gameDone);
   brickArr.unshift(score);
   console.log(brickArr);
 
